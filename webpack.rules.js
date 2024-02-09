@@ -7,6 +7,19 @@ module.exports = [
     use: 'node-loader',
   },
   {
+    test: /\.jsx?$/,
+    resolve: {
+      extensions: ['', '.js', '.jsx']
+    },
+    use: {
+      loader: 'babel-loader',
+      options: {
+        exclude: /node_modules/,
+        presets: ['@babel/preset-react']
+      }
+    }
+  },
+  {
     test: /[/\\]node_modules[/\\].+\.(m?js|node)$/,
     parser: { amd: false },
     use: {
