@@ -6,7 +6,7 @@ export default ({ router }) => {
     const create = React.useCallback(() => {
         const id = /* create new */ '100';
 
-        router.navigate('catalogs/edit', { id });
+        router.navigate('catalogs/edit', { id, mode: 'new' });
     }, []);
 
     return (
