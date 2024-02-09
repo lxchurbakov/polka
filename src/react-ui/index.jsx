@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { Base, Text } from 'libs/atoms';
+
 export default () => {
     return (
-        <h2>It works!</h2>
+        <Text>It works!</Text>
     );
 };
