@@ -7,14 +7,13 @@ rules.push({
 });
 
 module.exports = {
-  // Put your normal webpack config below here
   module: {
     rules,
   },
   resolve: {
     alias: {
       libs: path.resolve(__dirname, './src/libs/'),
-      // Templates: path.resolve(__dirname, 'src/templates/'),
+      plugins: path.resolve(__dirname, './src/plugins/'),
     },
   },
 };
